@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAC Movie</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+    <body class="contenedor fondo">
+        <header >         
+            <div class="nav-bg nav-principal">
+            <div class="nav-logo">
+                <a href="http:/">
+                <img class="logo" src="img/CAC-Logo.png" alt="LOGO">
+                </a>
+            </div>
+            <nav class="nav-enlaces">
+            </nav>
+            </div>
+        </header>
+        <section >
+           
+            <form class="formulario" action="">
+            <fieldset>
+                <legend>Registro</legend>
+        
+            <div class="campo ">
+                <label for="nombre" class="form-label"></label>
+                <input type="text" class="input-text" name="nombre"  autocomplete="off"
+                required placeholder="Tu Nombre">
+              </div>
+              <div class="campo">
+                <label for="apellido" class="form-label"></label>
+                <input type="text" class="input-text" id="apellido"name="apellido" autocomplete="off"
+                 required placeholder="Tu Apellido">
+              </div>
+         
+              <div class="campo">
+                <label for="correo" class="form-label"></label>
+                <input type="email" class=" input-text" id="correo"  name="correo"required 
+                placeholder="Tu Correo"></input>
+              </div>
+              <div class="campo">
+                <label for="password" class="form-label"></label>
+                <input type="password" class=" input-text" name="password" required placeholder="Contraseña"></input>
+
+              </div>
+              <div class="campo">
+                <select class="input-text" id="pais" name="pais">
+                    <option  selected disabled >-Seleccione País-</option>
+                    <option value="arg">Argentina</option>
+                    <option value="bra">Brasil</option>
+                    <option value="uru">Uruguay</option>
+                    <option value="par">Paraguay</option>
+                  </select>
+              </div>
+
+               <div class="campo">
+               <label class="label-legend"> ¿Quieres recibir información sobre los Estrenos?</label>
+                <div> <input type="radio" name="info" value= "si"required >Si</div>
+                  <div> <input type="radio" name="info" value= "no" required >No</div>
+               </div>
+          
+
+          
+              <div class="alinear-derecha flex">
+                <button type= "submit" class="boton" name="guardar" >Registrarse</button>
+              
+              </div>
+              
+              
+              </fieldset>
+            </form>
+        </section>
+</html>
