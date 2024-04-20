@@ -9,18 +9,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
-    <link rel="shortcut icon" href="img/CAC-Logo.png" type="image/x-icon">
-
+    <!-- Animated -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="shortcut icon " href="img/film-solid.svg" type="image/x-icon">
+    
 
 
 </head>
 <body class="contenedor">
     <header >
-        <div class=" nav-principal">
-        <div class="nav-logo">
-            <a href="index.html">
-            <img class="logo" src="img/CAC-Logo.png" alt="LOGO">
-            </a>
+        <div class="nav-principal">
+        <div class="link-logo animate__animated animate__tada ">
+            <a class="logo-link "  href="index.html">
+           <img class="logo" src="img/film-solid.svg" alt="LOGO">
+            CAC-Movies</a>
         </div>
         <nav class="nav-enlaces">
             <a class="" href="#tendencias">Tendencias</a>
@@ -29,23 +31,23 @@
         </nav>
     </div>
     </header>
-    <section class="imagen texto">
+    <section class="imagen">
+      <div class="contenido-imagen">
         <h1>Películas y series ilimitadas en un solo lugar</h1>
             <h3>Disfruta donde quieras.</h3>
             <h3>Cancela en cualquier momento.</h3>
-            <a href="registrarse.html">
-            <button class="boton" type="button">Registrate</button>
-             </a>
+            <a class="boton" href="registrarse.html">Registrate</a>
+            </div>
     </section>
     <main class="principal">
-
-        <section class="buscador">
+     
+        <section class="buscador ">
             <h3>¿Qué estas buscando para ver?</h3>
             <div class="input-buscador">
-            <input class="campo-buscador" type="text" placeholder="Buscar...">
-            <input class="campo boton" type="submit" value="Buscar">
-        </div>
-        <hr>
+            <input class="campo-buscador campo-pag" type="text" placeholder="Buscar...">
+            <input class="campo boton campo-pag" type="submit" value="Buscar">
+            </div>
+      
         </section>
         <section id="tendencias" class="grilla-sesion ">
             <h3>Las Tendencias de Hoy</h3>
@@ -160,46 +162,81 @@
                
         </div>
         </section>
-        <section class="paginador">           
+        <section class="buscador "> 
+          <div class="input-buscador">
             <input class="campo-pag boton" type="submit" value="&#9664;  Anterior">                
-            <input class="campo-pag boton" type="submit" value="Siguiente  &#9654;">
-        </section>
-        <hr>
+            <input class="campo-pag boton" type="submit" value="Siguiente  &#9654;">   
+          </div>
+          </section>  
+        
         <section class="aclamadas">
             <h3>Las Más Aclamadas</h3>
             <div class="grilla-a">
 
             <div class="movie-cell">
-                <img src="img/9.jpg" alt="Movie" class="movie-a">
+                <img src="img/1.jpg" alt="Movie" class="movie-a">
                 
                 <h5>ver más...</h5>
             </div>
-                    
             <div class="movie-cell">
-                <img src="img/2.jpg" alt="Movie" class="movie-a">
-                <h5>ver más...</h5>
-            </div>
-            <div class="movie-cell">
-              <img src="img/5.jpg" alt="Movie" class="movie-a">
+              <img src="img/2.jpg" alt="Movie" class="movie-a">
+              
               <h5>ver más...</h5>
           </div>
-            <div class="movie-cell">
-                <img src="img/3.jpg" alt="Movie" class="movie-a">
-                <h5>ver más...</h5>
-            </div>
-            <div class="movie-cell">
-                <img src="img/4.jpg" alt="Movie" class="movie-a">
-                <h5>ver más...</h5>
-            </div>
-               
+          <div class="movie-cell">
+            <img src="img/3.jpg" alt="Movie" class="movie-a">
+            
+            <h5>ver más...</h5>
+        </div>
+        <div class="movie-cell">
+          <img src="img/4.jpg" alt="Movie" class="movie-a">
+          
+          <h5>ver más...</h5>
+        </div>
+                    
             <div class="movie-cell">
                 <img src="img/5.jpg" alt="Movie" class="movie-a">
                 <h5>ver más...</h5>
             </div>
+            <div class="movie-cell">
+              <img src="img/6.jpg" alt="Movie" class="movie-a">
+              <h5>ver más...</h5>
+          </div>
+            <div class="movie-cell">
+                <img src="img/7.jpg" alt="Movie" class="movie-a">
+                <h5>ver más...</h5>
+            </div>
+            <div class="movie-cell">
+                <img src="img/8.jpg" alt="Movie" class="movie-a">
+                <h5>ver más...</h5>
+            </div>
+               
+            <div class="movie-cell">
+                <img src="img/9.jpg" alt="Movie" class="movie-a">
+                <h5>ver más...</h5>
+            </div>
+            <div class="movie-cell">
+              <img src="img/10.jpg" alt="Movie" class="movie-a">
+              <h5>ver más...</h5>
+          </div>
+          <div class="movie-cell">
+              <img src="img/11.jpg" alt="Movie" class="movie-a">
+              <h5>ver más...</h5>
+          </div>
+             
+          <div class="movie-cell">
+              <img src="img/12.jpg" alt="Movie" class="movie-a">
+              <h5>ver más...</h5>
+          </div>
+
         </div>
         </section>
     </main>
-
+<div class="flotante">
+<a href="index.html">
+  <img src="img/arrow-up-solid.svg" alt="UP-arrow" srcset="">
+</a>
+</div>
     <footer>
         <div class="nav-footer nav-pie">
             <nav class="nav-enlaces ">
