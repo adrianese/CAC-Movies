@@ -29,7 +29,7 @@ body {
     align-items: center;
  }
  .logo{
-    max-height: 4rem;
+    max-height: 3rem;
     padding: .5rem;
     margin: 0.5rem; 
  }
@@ -43,9 +43,10 @@ body {
     align-items: center;
     text-decoration: none;
 }
+
 .link-logo:hover{
     animation: animate__shakeX; /* referring directly to the animation's declaration */
-    animation-duration: 1.2s; /* don't forget to set a duration! */
+    animation-duration: 1s; /* don't forget to set a duration! */
     /* animate__animated animate__tada*/
    /* animate__shakeX*/
  }
@@ -56,7 +57,9 @@ body {
     font-size: 1.4rem;
     font-weight: 700;
     padding: .8rem;  
-    transition: border 2s;
+    border: 3px solid transparent;
+    border-radius: 2rem;
+    transition: all .2s ease-in;
 }
 .sesion {    
     background-color: #000;
@@ -64,8 +67,9 @@ body {
 }
 .nav-enlaces a:hover {  
     color: #adadad;
-    border: 3px solid #844537;
     border-radius: 2rem;
+    border: 3px solid #A4291F;
+  
 }
 
 /* Imagen fondo */
@@ -425,7 +429,7 @@ hr{
 }
 .formulario {
     background-color: #585756;
-    width: min( 40rem, 60% ); /** Utiliza el valor más pequeño **/
+    width: min( 50rem, 80% ); /** Utiliza el valor más pequeño **/
     margin: 5rem auto;
     padding: 1rem;
     border-radius: 1rem;
