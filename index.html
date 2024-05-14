@@ -41,134 +41,42 @@
     </section>
     <main class="principal">
      
-        <section class="buscador ">
-            <h3>¿Qué estas buscando para ver?</h3>
+        <section class="buscador buscadorTitulo ">
+            <h3 class="">¿Qué estas buscando para ver?</h3>
+            <div id="parrafo" class="parrafo ocultar"><p><i>Buscar por Género: accion, animada, aventura, comedia, drama, terror.</i></p></div>
             <div class="input-buscador">
-            <input class="campo-buscador campo-pag" type="text" placeholder="Buscar...">
-            <input class="campo boton campo-pag" type="submit" value="Buscar">
+            <input id="inputBuscar" class="campo-buscador campo-pag" type="text" placeholder="   Buscar por Nombre o Género...">
+            <input id="btnBuscador" name="buscar" class="campo boton campo-pag" type="submit" value="Buscar">
             </div>
-      
         </section>
+        
+        <section id="resultBuscador" class=" grilla-sesion ">
+            <div class="no-result"></div>
+        </div>
+       
+        </section>
+
         <section id="tendencias" class="grilla-sesion ">
             <h3>Las Tendencias de Hoy</h3>
-            <div class="grilla">
+       
 
-            <div class="movie-cell box">    
-                <img src="img/1.jpg" alt="Movie" class="movie">
-                <a href="resumen.html">
-              <div class="capa">
-                <h4>DUNE</h4>
-                <p>Ver más..</p>
-              </div>  </a>
-            </div>
-            
-            <div class="movie-cell box">    
-                <img src="img/2.jpg" alt="Movie" class="movie">
-                <a href="resumen.html">
-              <div class="capa">
-                <h>The Godfather</h4>
-                <p>Ver más..</p>
-              </div> </a>  
-            </div>
-               
-            <div class="movie-cell box">    
-                <img src="img/3.jpg" alt="Movie" class="movie">
-                <a href="resumen.html">
-              <div class="capa">
-                <h4>One Love</h4>
-                <p>Ver más..</p>
-              </div>  </a>
-            </div>
-           
-            <div class="movie-cell box">    
-                <img src="img/4.jpg" alt="Movie" class="movie">
-                <a href="resumen.html">
-              <div class="capa">
-                <h5>Bullet Train Down</h5>
-                <p>Ver más..</p>
-              </div>  </a>
-            </div>
-            <div class="movie-cell box">    
-                <img src="img/5.jpg" alt="Movie" class="movie">
-                <a href="resumen.html">
-              <div class="capa">
-                <h5>Anyone but you</h5>
-                <p>Ver más..</p>
-              </div> </a>
-            </div>
-           
-            <div class="movie-cell box">    
-                <img src="img/6.jpg" alt="Movie" class="movie">
-                <a href="resumen.html">
-              <div class="capa">
-                <h4>Parasite</h4>
-                <p>Ver más..</p>
-              </div>  </a>
-            </div>
-               
-            <div class="movie-cell box">    
-                <img src="img/7.jpg" alt="Movie" class="movie">
-                <a href="resumen.html">
-              <div class="capa">
-                <h4>P S P</h4>
-                <p>Ver más..</p>
-              </div>  </a>
-            </div>
-            <div class="movie-cell box">    
-                <img src="img/8.jpg" alt="Movie" class="movie">
-                <a href="resumen.html">
-              <div class="capa">
-                <h5>Cinema Paradiso</h5>
-                <p>Ver más..</p>
-              </div>  </a>
-            </div>
-           
-            <div class="movie-cell box">    
-                <img src="img/9.jpg" alt="Movie" class="movie">
-                <a href="resumen.html">
-              <div class="capa">
-                <h4>Green Mile</h4>
-                <p>Ver más..</p>
-              </div>  </a>
-            </div>
-
-            <div class="movie-cell box">    
-                <img src="img/10.jpg" alt="Movie" class="movie">
-                <a href="resumen.html">
-              <div class="capa">
-                <h5>ShawShank</h5>
-                <p>Ver más..</p>
-              </div>  </a>
-            </div>
-               
-            <div class="movie-cell box">    
-                <img src="img/11.jpg" alt="Movie" class="movie">
-                <a href="resumen.html">
-              <div class="capa">
-                <h5>VIKINGS</h5>
-                <p>Ver más..</p>
-              </div> </a>
-            </div>
-            <div class="movie-cell box">    
-                <img src="img/12.jpg" alt="Movie" class="movie">
-                <a href="resumen.html">
-              <div class="capa">
-                <h5>Life is Beautiful</h5>
-                <p>Ver más..</p>
-              </div> </a>
-            </div>
-        
 
                
         </div>
         </section>
         <section class="buscador "> 
-          <div class="input-buscador">
-            <input class="campo-pag boton" type="submit" value="&#9664;  Anterior">                
-            <input class="campo-pag boton" type="submit" value="Siguiente  &#9654;">   
+          <div class="input-buscador paginacion">
+            <!-- <input id="pagAnterior" class="campo-pag boton" type="submit" value="&#9664;  Anterior">                
+            <input id="pagSiguiente" class="campo-pag boton" type="submit" value="Siguiente  &#9654;"> -->
+            <button id="anterior" class=" campo-pag boton">&laquo; Anterior</button>
+            <button id="siguiente" class="campo-pag boton">Siguiente &raquo;</button>   
           </div>
           </section>  
-        
+
+          <section id="tendencias" class="grilla-sesion ">  
+           
+            </div>
+          </section>  
         <section class="aclamadas">
             <h3>Las Más Aclamadas</h3>
             <div class="grilla-a">
@@ -248,6 +156,7 @@
           </div>
     </footer>
    
-    
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

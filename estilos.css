@@ -101,6 +101,7 @@ h3{
     font-size: 3rem;
     color: #FFF;  
     text-align: center;  
+    margin: 3rem 0;
 }
 h4{
     font-size: 2.6rem;
@@ -114,12 +115,9 @@ h5{
     margin: 0;
     padding: 1rem;
 }
-hr{
-    margin: 2rem auto;
-    color: #900C3F;
-    text-align: center;
-    width: 50rem;
-}
+
+
+
 .input-buscador{
     display: flex;
     flex-direction: row;
@@ -128,6 +126,7 @@ hr{
 }
 .campo-pag {
     width: 20rem;
+    text-decoration: none;
 }
 .campo-buscador {
     height: 4rem;
@@ -148,6 +147,7 @@ hr{
     text-align: center;       
 }
 .boton:hover{
+    cursor: pointer;
     background-color: #C54427;
 }
 .principal{
@@ -171,7 +171,7 @@ hr{
 .movie{
    height: 21rem;
    width: 14rem;
-    border-radius: .5rem;
+   border-radius: .5rem;
 }
 .movie-cell{
    display: flex;
@@ -185,6 +185,8 @@ hr{
     position: relative;
     overflow: hidden;
     margin: 1rem;
+    transform: scale(1);
+    transition:  400ms ease ;
 }
 .capa{
     position: absolute;
@@ -200,10 +202,18 @@ hr{
     color: #FFF;
     transform: scale(0);
     transition: .3s ease;
+   
+}
+.box:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .4s ease;
+    box-shadow: 53px 54px 14px -43px rgba(72, 4, 28, 0.45);
 }
 .box:hover .capa{
     cursor: pointer;
     transform: scale(1);
+  
 }
 .grilla{
     display: grid;
@@ -282,7 +292,7 @@ hr{
     right: 3rem;
     background-color: #900C3F;
     border-radius: 50%;
-    animation: mostrar-flecha auto linear;
+    animation: mostrarFlecha auto linear;
     animation-timeline: scroll(root);
 }
 .flotante img{
@@ -291,7 +301,7 @@ hr{
     filter: invert(80%);  
 }
 
-@keyframes mostrar-flecha {
+@keyframes mostrarFlecha {
     0%{
         opacity: 0;
     }
@@ -418,7 +428,7 @@ hr{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: auto;      
+    height: 55rem;      
 }
 .centrado{
     font-size: 5rem;
@@ -430,7 +440,7 @@ hr{
 .formulario {
     background-color: #585756;
     width: min( 50rem, 80% ); /** Utiliza el valor más pequeño **/
-    margin: 5rem auto;
+    margin: 6rem auto;
     padding: 1rem;
     border-radius: 1rem;
 }
@@ -439,18 +449,18 @@ hr{
 }
 .formulario legend {
     text-align: center;
-    font-size: 1.8rem;
-    color:  #940f07; 
+    font-size: 2.2rem;
+    color:  #bb221a; 
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 900;
     margin-bottom: 2rem;
     
 }
 .formulario .label-legend {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin: 1rem;
-    color: #940f07; 
+    color: #991e17; 
 }
 .campo {
     margin-bottom: 1rem;
@@ -475,4 +485,27 @@ hr{
    background-color: transparent;
 }
   
- 
+ /*paginador*/
+
+ .ocultar{
+    visibility: hidden;
+    transform: scale(0);
+    transition: .8s ease;
+}
+
+.mostrar{
+    display: block;
+    transform: scale(1);
+    transition: .8s ease;
+}
+
+.parrafo{
+    background-color: #dab5b5;
+    padding: 1rem;
+    display: inline-block;
+    text-align: center;
+    border-radius: 2rem;
+    transform: background-color;
+    transition: .7s ease;
+
+}
