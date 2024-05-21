@@ -25,7 +25,7 @@ titulo = `
 
 </div>          
 `
-masinfo = ` <a href="https://www.imdb.com/find/?q=${data[item].nombre}" target="_blank" rel="noopener noreferrer">Ver Más...</a>
+masinfo = ` <a class="sesion" href="https://www.imdb.com/find/?q=${data[item].nombre}" target="_blank" rel="noopener noreferrer">Ver Más...</a>
 `
 
 } 

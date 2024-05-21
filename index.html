@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="shortcut icon " href="img/film-solid.svg" type="image/x-icon">
     
-
-
 </head>
 <body class="contenedor">
     <header >
@@ -28,6 +26,7 @@
             <a class="" href="#tendencias">Tendencias</a>
             <a class="" href="registrarse.html">Registrarse</a>
             <a class="sesion" href="login.html">Iniciar Sesión</a>
+            <a class="link-mv" href="apimarvel.html">API<img src="img/Marvel_Logo.svg" alt="logo" class="logo-marvel"></a>
         </nav>
     </div>
     </header>
@@ -43,17 +42,18 @@
      
         <section class="buscador buscadorTitulo ">
             <h3 class="">¿Qué estas buscando para ver?</h3>
-            <div id="parrafo" class="parrafo ocultar"><p><i>Buscar por Género: accion, animada, aventura, comedia, drama, terror.</i></p></div>
+            <div id="parrafo" class="parrafo ocultarpag"><p><i>Buscar por Nombre o Género: accion, animada, aventura, comedia, drama, terror.</i></p></div>
             <div class="input-buscador">
             <input id="inputBuscar" class="campo-buscador campo-pag" type="text" placeholder="   Buscar por Nombre o Género...">
             <input id="btnBuscador" name="buscar" class="campo boton campo-pag" type="submit" value="Buscar">
             </div>
+            <h3 class="resultados"></h3>
         </section>
         
         <section id="resultBuscador" class=" grilla-sesion ">
             <div class="no-result"></div>
         </div>
-       
+      
         </section>
 
         <section id="tendencias" class="grilla-sesion ">
@@ -66,8 +66,7 @@
         </section>
         <section class="buscador "> 
           <div class="input-buscador paginacion">
-            <!-- <input id="pagAnterior" class="campo-pag boton" type="submit" value="&#9664;  Anterior">                
-            <input id="pagSiguiente" class="campo-pag boton" type="submit" value="Siguiente  &#9654;"> -->
+         
             <button id="anterior" class=" campo-pag boton">&laquo; Anterior</button>
             <button id="siguiente" class="campo-pag boton">Siguiente &raquo;</button>   
           </div>

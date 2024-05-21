@@ -1,6 +1,7 @@
 
 { 
-  "data" : [
+  "data" :
+   [
     {
         "codigo": 0,
         "imagen": "img/28.jpg",

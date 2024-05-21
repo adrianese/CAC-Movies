@@ -205,20 +205,53 @@ data = [
         "gen":"[aventura, fantasia, infantiles, epica] "
         },
         {
-            "codigo": "29",
-            "imagen": "img/29.jpg",
-            "nombre": "It",
-            "genero": "terror",
-            "gen":"[suspenso, terror, adulto, violencia] "
-            },
+     "codigo": "29",
+    "imagen": "img/29.jpg",
+    "nombre": "It",
+     "genero": "terror",
+    "gen":"[suspenso, terror, adulto, violencia] "
+    },
           
-            {
-            "codigo": "31",
-            "imagen": "img/31.jpg",
-            "nombre": "Pet Sematary",
-            "genero": "terror",
-            "gen":"[suspenso, terror, adulto, violencia] "
-            } 
+     {
+     "codigo": "30",
+    "imagen": "img/30.jpg",
+    "nombre": "Pet Sematary",
+    "genero": "terror",
+    "gen":"[suspenso, terror, adulto, violencia] "
+    } ,
+     {
+     "codigo": "31",
+     "imagen": "img/31.jpg",
+     "nombre": "Cat & Dog",
+     "genero": "comedia",
+     "gen":"[aventura, fantasia, adulto, epica] "
+     },
+     {
+    "codigo": "32",
+    "imagen": "img/32.jpg",
+     "nombre": "Transformers",
+    "genero": "accion",
+     "gen":"[suspenso, aventura, joven, violencia] "
+     },
+                  
+     {
+     "codigo": "33",
+     "imagen": "img/33.jpg",
+     "nombre": "Alienoid",
+     "genero": "suspenso",
+     "gen":"[aventura, accion, adulto, violencia] "
+     } ,
+     {
+     "codigo": "34",
+     "imagen": "img/34.jpg",
+    "nombre": "Blockers",
+    "genero": "comedia",
+     "gen":"[dramatica , adulto, romantica] "
+     } 
+                
+        
+    
+            
     
 
     
