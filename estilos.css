@@ -98,6 +98,10 @@ body {
     justify-content: space-evenly;
     text-align: center;
 }  
+
+.contenido-imagen h3{   
+    margin: 0;
+}
 h1{
     font-size: 4.2rem;
     color: #FFF;
@@ -505,17 +509,17 @@ h5{
  .ocultarpag{
     visibility: hidden;
     transform: scale(0);
-    transition: .8s ease;
+    transition: .6s ease;
 }
 
 .mostrarpag{
     display: block;
     transform: scale(1);
-    transition: .8s ease;
+    transition: .6s ease;
 }
 
 .parrafo{
-    background-color: #dab5b5;
+    background-color: hsla(0, 26%, 82%, 0.573);
     padding: 1rem;
     display: inline-block;
     max-inline-size: 60rem;
@@ -582,23 +586,18 @@ h5{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-
 }
 
 .container-chars{
     display:grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0.5rem;
-
 }
 
 .contenedor-mv{
     max-width: 90%;
-    margin: 2rem auto;
-    
+    margin: 2rem auto;  
     }
-
-
     
 .titulo-marvel{
     color: azure;
@@ -618,7 +617,6 @@ h5{
     font-size: 1.5rem;
     margin: 1.5rem;
     text-align: center;
-
 }
 
 .pdescripcion{
@@ -632,8 +630,6 @@ h5{
 .mostrar{
     display: block;
 }
-
-
 
 .comics{
     border: 2px solid black;
@@ -656,9 +652,6 @@ h5{
     transition: background-color 300ms ease;
     transform: scale();
     transition: 400ms ease ;
-
-    
-  
 }
 
 .solapa button:hover{
@@ -667,7 +660,6 @@ h5{
     transform: scale(1.1);
     transition: 300ms ease ;
 }
-
 
 button.actual{
     background-color: rgb(249, 248, 247);

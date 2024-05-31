@@ -3,7 +3,7 @@
 data = [ 
     {
         "codigo": "0",
-        "imagen": "img/28.jpg",
+        "imagen": "img/0.jpg",
         "nombre": "Ice Age",
         "genero": "animada",
         "gen":"[aventura, fantasia, infantiles, epica] "
@@ -200,7 +200,7 @@ data = [
         {
         "codigo": "28",
         "imagen": "img/28.jpg",
-        "nombre": "Ice Age",
+        "nombre": "Damsel",
         "genero": "animada",
         "gen":"[aventura, fantasia, infantiles, epica] "
         },
@@ -247,8 +247,50 @@ data = [
     "nombre": "Blockers",
     "genero": "comedia",
      "gen":"[dramatica , adulto, romantica] "
-     } 
-                
+     } ,
+
+
+
+
+     {
+        "codigo": "35",
+        "imagen": "img/35.jpg",
+        "nombre": "Avatar",
+        "genero": "animada",
+        "gen":"[aventura, fantasia, adulto, epica] "
+        },
+        {
+       "codigo": "36",
+       "imagen": "img/36.jpg",
+        "nombre": "Godzilla x Kong",
+       "genero": "accion",
+        "gen":"[suspenso, aventura, joven, violencia] "
+        },
+                     
+        {
+        "codigo": "37",
+        "imagen": "img/37.jpg",
+        "nombre": "Napoleon",
+        "genero": "drama",
+        "gen":"[ accion, adulto, violencia] "
+        } ,
+        {
+       "codigo": "38",
+       "imagen": "img/38.jpg",
+        "nombre": "Megamind",
+       "genero": "animada",
+        "gen":"[ aventura, joven, violencia] "
+        },
+                     
+        {
+        "codigo": "39",
+        "imagen": "img/39.jpg",
+        "nombre": "Flash",
+        "genero": "aventura",
+        "gen":"[ accion, adulto, violencia] "
+        } 
+         
+         
         
     
             

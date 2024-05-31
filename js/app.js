@@ -3,12 +3,17 @@
    cargarPeliculas();
    campoBuscador();
    nuevaBusqueda();
-   paginaSiguiente();
-   paginaAnterior();
+   paginador();
+   // paginaSiguiente();
+   // paginaAnterior();
   
 });
 
-function cargarPeliculas(paso=0, pasoFinal=12){
+let pindex = 0;
+let itemsPP= 8;
+let items=38;
+
+function cargarPeliculas(pindex=0, itemsPP= 8){
    if(document.getElementById("tendencias")){
       // elementos fijos
       plantilla = ` 
@@ -16,7 +21,8 @@ function cargarPeliculas(paso=0, pasoFinal=12){
       <div class="grilla">
       `
    //elementos que varian con contenido
-   for(var i=paso; i<pasoFinal; i++){
+   for(let i=(pindex*itemsPP) ; i < (pindex*itemsPP)+itemsPP; i++){
+      if (!data[i]){break}
       plantilla+=  `  
       <div class="movie-cell box"> 
       <img src=${data[i].imagen} alt="Movie" class="movie">
@@ -30,7 +36,8 @@ function cargarPeliculas(paso=0, pasoFinal=12){
    }
       } 
    document.getElementById("tendencias").innerHTML=plantilla;
-   
+   //console.log(pindex);
+   return pindex ;
 };
 
 //////////////////  BUSCADOR ///////////////////
@@ -57,12 +64,10 @@ function campoBuscador(){
          console.log(campo);
          if (campo){
             return nuevaBusqueda(campo);
-         }
-         
+         }         
      });
     }
       
-
 
 function nuevaBusqueda(campo){
       const resultBuscador = document.getElementById('resultBuscador');
@@ -75,7 +80,6 @@ function nuevaBusqueda(campo){
        generobusqueda = data.filter((dato)=>(dato.genero) === campo);
        nuevabusqueda=[...titulobusqueda, ...generobusqueda];
          // console.log(nuevaBusqueda);
-  
       if (nuevabusqueda) {
       let dato = nuevabusqueda;
       const resultado = document.querySelector('.resultados');
@@ -112,38 +116,43 @@ function nuevaBusqueda(campo){
       contenedorBusqueda.remove();
       inputBuscar.value=("");
 
-     })
-   } 
-
-}
- 
+      })
+      } 
+   }
    };
    
 
-
 //////////////////PAGINADOR //////////////////////
 
-function paginaSiguiente(cont=2){
-   const paginaSiguiente = document.querySelector('#siguiente');
-   paginaSiguiente.addEventListener('click', function(){
-     
-      if(cont ===2){
-         cargarPeliculas(12, 24)
-      }else if(cont ===3){
-         cargarPeliculas(25, 34)
-      }   
-}); 
-}
-function paginaAnterior(cont=2){
-   const paginaAnterior = document.querySelector('#anterior');
-   paginaAnterior.addEventListener('click', function(){
-      if (cont===2) {
-         cargarPeliculas(0,12);
-      }else if (cont ===3){
-         cargarPeliculas(12,24)
-      }
-      
-   }) ;   
-}
+
+function paginador(pindex=0){
+      const paginaSiguiente = document.querySelector('#siguiente');
+      const paginaAnterior = document.querySelector('#anterior');
+      paginaSiguiente.addEventListener('click', function(){
+      //console.log(pindex);
+      if (pindex <=3) {
+            pindex++;
+            paginaAnterior.classList.remove('ocultarpag');
+            cargarPeliculas(pindex,8);
+      }else{
+            paginaSiguiente.classList.add('ocultarpag');
+            console.log(paginaSiguiente);
+         }
+      });
+
+      paginaAnterior.addEventListener('click', function(){
+      //console.log(pindex);
+      if (pindex>0) {
+            pindex--;
+            paginaSiguiente.classList.remove('ocultarpag');
+            cargarPeliculas(pindex,8);
+      }else{
+            paginaAnterior.classList.add('ocultarpag');
+            console.log(paginaSiguiente);
+         }
+      });
+   }
+
+
 
 
